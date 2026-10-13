@@ -190,7 +190,7 @@ export default function CardDesigner({
 
         {/* Preview card */}
         <div
-          className="w-64 rounded-xl p-5 flex-shrink-0"
+          className="w-full lg:w-64 rounded-xl p-5 flex-shrink-0"
           style={{
             background: activeTheme.bg,
             minHeight: "160px",

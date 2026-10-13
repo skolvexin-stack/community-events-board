@@ -79,7 +79,7 @@ export default async function EventPage({
             {event.title}
           </h1>
 
-          <div className="grid grid-cols-2 gap-3 mb-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
             <div
               className="flex items-center gap-2 text-sm p-3 rounded-lg"
               style={{ background: "var(--muted-bg)" }}
@@ -97,7 +97,7 @@ export default async function EventPage({
               <span style={{ color: "var(--foreground)" }}>{event.city}</span>
             </div>
             <div
-              className="flex items-center gap-2 text-sm p-3 rounded-lg col-span-2"
+              className="flex items-center gap-2 text-sm p-3 rounded-lg sm:col-span-2"
               style={{ background: "var(--muted-bg)" }}
             >
               <IndianRupee size={15} style={{ color: "var(--primary)" }} />

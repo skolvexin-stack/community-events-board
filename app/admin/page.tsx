@@ -86,14 +86,14 @@ export default function AdminDashboard() {
             Admin — Events
           </h1>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
           <Link
             href="/admin/events/new"
-            className="flex items-center gap-1.5 px-4 py-2 text-sm font-medium rounded-lg"
+            className="flex items-center gap-1.5 px-3 sm:px-4 py-2 text-sm font-medium rounded-lg"
             style={{ background: "var(--primary)", color: "var(--primary-fg)" }}
           >
             <Plus size={14} />
-            Add event
+            <span className="hidden sm:inline">Add event</span>
           </Link>
           <button
             onClick={logout}
@@ -101,7 +101,7 @@ export default function AdminDashboard() {
             style={{ color: "var(--muted)", borderColor: "var(--border)" }}
           >
             <LogOut size={14} />
-            Logout
+            <span className="hidden sm:inline">Logout</span>
           </button>
         </div>
       </div>
